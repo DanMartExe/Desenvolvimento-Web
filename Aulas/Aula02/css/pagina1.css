@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Sedan:ital@0;1&display=swap')
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: "Jacquard 24", system-ui; /*veio do Google fontes, junto do import*/
+}
+
+img {
+    width: 800px;
+    height: 400px;
+
+    /*Código para centralizar img e button*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    font-family: "Sedan", serif;
+    text-align: center;
+}
+p {
+    font-family: "Sedan", serif;
+    text-align: center;
+}
+
+button { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 30px;
+    width: 150px;
+    border: 1px solid #122d4c; /*none p/ tirar borda*/
+    border-radius: 10px;
+    cursor: pointer; /*cursor vira maozinha*/
+    background: linear-gradient(#156597, #20a3d8); /*funciona p tudo (body, etc...)*/
+    /*pesquisa no Google CSS pallet, depois site CSS Color Palette Generator
+    dá pra copiar códico de cores apenas clicando "#122d4c"*/
+    /*pesquisar no Google linear gradiente CSS, site: "linear-gradient() - CSS: Cascading Style Sheets | MDN"
+    dá pra configurar degrade*/
+    transition: 0.5s ease-in-out; /*tempo de transição das cores*/
+}
+
+button:hover { /*estilo do botão pra quando passar mouse em cima*/
+    background: linear-gradient(#00eaff, #57eaff);
+}
+
+button a {
+    color: white;
+    text-decoration: none; /*tirar sublinhado do texto in button*/
+}
+
+button a:hover {
+    color: yellow;
+}
+
+/*coolors.co/*/
