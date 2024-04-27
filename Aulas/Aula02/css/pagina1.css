@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Sedan:ital@0;1&display=swap')
 
 h1 {
     font-size: 50px;
@@ -17,11 +16,9 @@ img {
     margin-right: auto;
 }
 h2 {
-    font-family: "Sedan", serif;
     text-align: center;
 }
 p {
-    font-family: "Sedan", serif;
     text-align: center;
 }
 
