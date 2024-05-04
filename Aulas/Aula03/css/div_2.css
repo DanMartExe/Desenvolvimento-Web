@@ -1,0 +1,36 @@
+#menu {
+    text-align: center;
+}
+
+.item-menu {
+    color: crimson;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    transition: .5s; /*tempo de transição p/ hover*/
+}
+
+.item-menu:hover {
+    font-size: 32px;
+}
+
+#produtos {
+    display: flex; /*o display vem por padrão bloqueado*/
+    justify-content: space-evenly; /*centralizar div... existe end, start, center...*/
+    margin-top: 50px;
+}
+
+.produto {
+    width: 200px;
+    height: 250px;
+    max-height: 250px;
+    border: 1px solid black;
+    padding: 10x;
+}
+
+/*.produto button (todos), ou só .btn*/
+.produto .btn {
+    display: flex;
+}
