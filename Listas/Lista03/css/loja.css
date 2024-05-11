@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #f2c684;
+}
+
+h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 350%;
+    text-align: center;
+}
+
+#menu {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.item-menu {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: "Poetsen One", sans-serif;
+    transition: .5s;
+}
+
+.item-menu:hover {
+    font-size: 25px;
+}
+
+#produtos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.produto {
+    border-radius: 3%;
+    text-align: center;
+    width: 400px;
+    height: 450px;
+    background: linear-gradient(#e48f67, #e09f80);
+    transition: .5s;
+}
+
+.produto:hover {
+    width: 405px;
+    height: 455px;
+}
+
+.produto img {
+    border-radius: 5%;
+    width: 200px;
+    height: 250px;
+}
+
+.produto h4 {
+    font-family: "Poetsen One", sans-serif;
+}
+
+.produto p {
+    text-justify: distribute;
+    font-family: cursive;
+}
+
+.produto button {
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    color: white;
+    background: linear-gradient(#92422e, #af6d53);
+}
+
+.produto button:hover {
+    background: linear-gradient(#af6d53,#92422e);
+}
