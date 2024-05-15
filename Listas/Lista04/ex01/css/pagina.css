@@ -1,0 +1,27 @@
+.conteudo-principal1 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    background-color: #0c2c43;
+}
+
+.conteudo-principal2 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    background-color: #1d5e86;
+}
+
+.conteudo-secundario1 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    background-color: #20a189;
+}
+
+.conteudo-secundario2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    background-color: #9cdfa3;
+}
