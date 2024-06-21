@@ -8,10 +8,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
-    height: 370px;
-    width: 300px;
-    background: white;
+    
+    height: 450px;
+    width: 350px;
+    background: #3d2a31;
     margin: 10%;
     border-radius: 10px;
 }
@@ -20,25 +20,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 290px;
-    background: blue;
+
+    font-size: 35px;
+    height: 70px;
+    width: 320px;
+    background: #695856;
     margin-top: 10px;
     border: 10px;
     border-radius: 10px;
     color: antiquewhite;
 }
 
+#digitos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 button {
-    color: blanchedalmond;
-    margin: 5px;
-    border: black;
+    color: white;
+    font-size: 25px;
+    margin: 4px;
     border-radius: 10px;
-    width: 85px;
+    width: 100px;
     height: 50px;
-    background-color: brown;
+    background-color: #514649;
 }
 
 button:hover {
-    background-color: aqua;
+    background-color: #2e2c2d;
+}
+
+button:active {
+    background-color: #514649;
 }

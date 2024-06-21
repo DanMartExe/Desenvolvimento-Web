@@ -1,34 +1,73 @@
-let digito0 = document.getElementById('0')
-let digito1 = document.getElementById('1')
-let digito2 = document.getElementById('2')
-let digito3 = document.getElementById('3')
-let digito4 = document.getElementById('4')
-let digito5 = document.getElementById('5')
-let digito6 = document.getElementById('6')
-let digito7 = document.getElementById('7')
-let digito8 = document.getElementById('8')
-let digito9 = document.getElementById('9')
-let adicao = document.getElementById('+')
-let subtracao = document.getElementById('-')
-let multiplicacao = document.getElementById('*')
-let divisao = document.getElementById('/')
+let digitos = document.getElementById('digitos')
+let tela = document.getElementById('tela')
+let numeroDigitado = ''
 
-var tela = document.getElementById('tela')
-tela.innerText = 'O resultado'
+for (let indiceDigito = 0; indiceDigito <= 9; indiceDigito++) {
+    let botaoDigito = document.createElement('button')
+    botaoDigito.textContent = indiceDigito
+    botaoDigito.value = indiceDigito
+    botaoDigito.id = `btn-${indiceDigito}`
 
-function Somar() {
-    var resultado = Number(numero1.value) + Number(numero2.value)
-    alert(`O resultado é: ${resultado}`)
+    botaoDigito.addEventListener('click', (evento) => {
+        numeroDigitado += evento.target.value
+        tela.textContent = numeroDigitado
+    })
 
-    var res = document.getElementById('resultado')
-    res.textContent = resultado
-    res.innerText = 'O resultado é' + resultado
+    digitos.appendChild(botaoDigito)
 }
 
-function adicionarDigito(digito) {
-    tela.innerText = digito
+let criarBotaoOperador = (id, valor) => {
+    let botaoOperador = document.createElement('button')
+    botaoOperador.id = id
+    botaoOperador.value = valor
+    botaoOperador.textContent = valor
+
+    digitos.appendChild(botaoOperador)
 }
 
-function tela(digitos) {
-    
-}
+criarBotaoOperador('btn-ponto', '.')
+criarBotaoOperador('btn-soma', '+')
+criarBotaoOperador('btn-sub', '-')
+criarBotaoOperador('btn-mult', '*')
+criarBotaoOperador('btn-div', '/')
+criarBotaoOperador('btn-result', '=')
+
+document.getElementById('btn-ponto').addEventListener('click', (evento) => {
+    numeroDigitado += evento.target.value
+    tela.textContent = numeroDigitado
+})
+
+document.getElementById('btn-soma').addEventListener('click', (evento) => {
+    numeroDigitado += evento.target.value
+    tela.textContent = numeroDigitado
+})
+
+document.getElementById('btn-sub').addEventListener('click', (evento) => {
+    numeroDigitado += evento.target.value
+    tela.textContent = numeroDigitado
+})
+
+document.getElementById('btn-mult').addEventListener('click', (evento) => {
+    numeroDigitado += evento.target.value
+    tela.textContent = numeroDigitado
+})
+
+document.getElementById('btn-div').addEventListener('click', (evento) => {
+    numeroDigitado += evento.target.value
+    tela.textContent = numeroDigitado
+})
+
+document.getElementById('btn-result').addEventListener('click', (evento) => {
+    tela.textContent = "Resultado: " + eval(numeroDigitado)
+    numeroDigitado = ''
+})
+
+let botaoLimpar = document.createElement('button')
+botaoLimpar.id = 'btn-limpar'
+botaoLimpar.textContent = 'C'
+digitos.appendChild(botaoLimpar)
+
+document.getElementById('btn-limpar').addEventListener('click', (evento) => {
+    numeroDigitado = ''
+    tela.textContent = ''
+})
