@@ -1,6 +1,6 @@
 # Introdução ao protocolo HTTP
 
-    Hyper Transfer Protocol
+    Hypertext Transfer Protocol
 
     METODOS HTTP:
         GET  - Utilizado para buscar/pegar coisas/recursos do servidor
